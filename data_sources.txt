@@ -1,0 +1,16 @@
+CS327E - ELEMENTS OF DATABASES LAB 1
+
+The dataset we are going to work on is called “Video games dataset” and is created by Dr. Joe Cox. We have renamed it “Game.csv” and it resides in the same directory as this file.
+It is available through the Portsmouth Research Portal and is published by the University of Portsmouth in a cvs file format.
+The link for the dataset is : https://researchportal.port.ac.uk/portal/en/datasets/video-games-dataset(d4fe28cd-1e44-4d2f-9db6-85b347bf761e).html
+
+This data set combines a lot of the core data that relates to video games such as Console, Genre, Used Prices, Numbers sold in the U.S, Review scores and how many people reviewed this Scores. 
+It also contains a column to indicate if the game is multi platform or not using 0 and 1 as possible values for false and true respectively. These are some of the attributes we are planning to model from this dataset.
+
+The data anomaly I see in this dataset is that even though there is a column for genre of the game, the data set has a column for many genres with possible values of 0’s and 1’s indicating if the title is of that genre or not. This seems redundant to me because the genre column already establishes the information.
+
+The challenges I foresee in this dataset is trying to figure out which entity classes would be the best choice given the amount of data and fields. The other challenges I see are that the expected primary key “Title” has duplicate values as they can span multiple consoles.  Modeling this is a big challenge.
+
+The second dataset we used is sourced from http://grouplens.org/datasets/movielens/
+and we called it “movies.csv”. This data set is fairly straightforward with movie title and genre. 
+The only challenge I see with this dataset is that the year of the movie is appended to the title so we have to somehow remove it in the import script.
