@@ -1,1 +1,2 @@
 # DatabaseApps
+This is a command line database application coded using python and MySql. Twitter API in conjunction with the Rotten Tomato hashtag was used to gather data from twitter about movie and game reviews with regards to rotten tomato. The application allows users to query different data collection combination such as movie rating averages, movies that have been made into games, number of reviewers etc. Use extended_query_interface.py in the command line (using python 2) to run the command line application.
